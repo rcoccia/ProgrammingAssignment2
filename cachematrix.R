@@ -41,6 +41,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## Return a matrix that is the inverse of 'x'
 cacheSolve <- function(x, ...) {
       cacheHit <- x$getinv()
+	  
       if (!is.null(cacheHit))
       {
           message("hit from cache")
